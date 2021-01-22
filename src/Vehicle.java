@@ -1,40 +1,40 @@
 public class Vehicle {
-    Vehicle() {
-        
-    }
-    public String typeVehicle;
-    public int noOfTyres;
-    public boolean accessories;
-    public String brand;
-    public int counter;
-    public String toyota;
+    
+    String typeVehicle;
+    int noOfTyres;
+    boolean accessories;
+    String brand;
+    static int counter;
    
-   public Vehicle(int noOfTyres, String brand, boolean accessories, int counter, String toyota, String typeVehicle) {
-       noOfTyres = 5;
-       accessories = true;
-       brand = toyota;
-       counter = counter + 1;       
+   public Vehicle() {
+       this.noOfTyres = 5;
+       this.accessories = true;
+       this.brand = "toyota";     
    }
    
    public boolean switchOn() {
-       return true;
+       return this.accessories = true;
    }
    public boolean switchOff() {
-       return false;
+       return this.accessories = false;
    }
    public boolean isPresent() {
-       return true;
+       return this.accessories;
    }
-   public boolean getBrand() {
-       return true;
+   public void getBrand() {
+       System.out.println(this.brand);
    }
-   public static boolean getNoOfVehicles() {
-       return true;
-   }
-
-   public void displayCarInfo() {
+   static void getNoOfVehicles() {
+       System.out.println(counter);
    }
 
-   public void displayTruckInfo() {
-    }
+   public void displayVehicleInfo() {
+        System.out.println("Car No.\t\t\t: " + counter);
+        System.out.println("Type Vehicle\t\t: " + this.typeVehicle);		
+        System.out.println("No of Tyres\t\t: " + this.noOfTyres);
+        System.out.println("accessories\t\t: " + isPresent());
+        System.out.println("Brand\t\t\t: " + this.brand);
+        System.out.println("Number of Vehicles\t: " + counter);	
+   }
+
 }

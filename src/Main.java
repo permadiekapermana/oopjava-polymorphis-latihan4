@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         Vehicle vehicle = new Car();
-        vehicle.displayCarInfo();
+        vehicle.displayVehicleInfo();
+        System.out.println();
         vehicle = new Truck();
-        vehicle.displayTruckInfo();
+        vehicle.displayVehicleInfo();
     }
 }
